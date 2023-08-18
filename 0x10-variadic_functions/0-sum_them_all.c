@@ -6,8 +6,8 @@
  * @n: number of first argument
  * @...: variable number of the next argument
  *
- * Return: If n == 0 - 0
- * Otherwise: sum of all its parameters
+ * Return: If n == 0 - 0.
+ * Otherwise: sum of all parameters.
  */
 int sum_them_all(const unsigned int n, ...)
 {
@@ -16,7 +16,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_start(ap, n);
 
-	for (i = 0; n > 0; i++)
+	for (i = 0; n > i; i++)
 		sum = sum + va_arg(ap, int);
 
 	va_end(ap);
