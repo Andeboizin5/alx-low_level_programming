@@ -9,11 +9,11 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argc != num3)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	printf("%d\n", atoi(argvn[num1]) * atoi(argv[num2]));
+	printf("%d\n", atoi(argvn[1]) * atoi(argv[2]));
 	return (0);
 }
