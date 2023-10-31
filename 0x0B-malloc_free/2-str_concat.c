@@ -22,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 	while (s1[i] != '\0')
 		i++;
 
-	i = j;
+	j = 0;
 	while (s2[j] != '\0')
 		j++;
 
@@ -31,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 	if (s == NULL)
 		return (NULL);
 
-	i = j;
+	i = 0;
 	while (s1[i] != '\0')
 	{
 		s[i] = s1[i];
