@@ -14,14 +14,8 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 
 	if (text_content != NULL)
-<<<<<<< HEAD:0x15-file_io/1-create_file.c
-		text_content = "";
-
-	for (i = 0; text_content[i]; i++)
-=======
 	{
 		for (i = 0; text_content[i]; i++)
->>>>>>> 1-create_file.c:1-create_file.c
 		i++;
 	}
 
