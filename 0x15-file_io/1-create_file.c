@@ -19,13 +19,10 @@ int create_file(const char *filename, char *text_content)
 		i++;
 	}
 
-	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
-
-	if (fd == -1)
-		return (-1)
+	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600)
 	w = write(fd, text_content, i);
 
-	if (w == -1)
+	if (fd == -1 || w == -1)
 		return (-1);
 
 	close(fd);
